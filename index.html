@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Identity by HTML5 UP</title>
+		<meta charset="utf-8" />
+	</head>
+	<body>
+	<h1>Who is Artem?</h1>
+  <button onclick="say()">Who? I wanna know!</button>
+
+	</body>
+  <script>
+    function say() {
+      text= [
+        "Artem is a fucking piece of shit!",
+        "Artem is a guy who likes to suck 500 black dicks",
+        "Artem is a freaking doopa!"
+      ]
+      var random = Math.floor(Math.random()*text.length);
+      console.log(random);
+      window.speechSynthesis.cancel();
+      return window.speechSynthesis.speak(new SpeechSynthesisUtterance(text[random]));
+    };
+  </script>
+</html>
