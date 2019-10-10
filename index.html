@@ -1,23 +1,19 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Who the hell is Artem?</title>
+		<title>Who the hell is Arthem?</title>
 		<meta charset="utf-8" />
 	</head>
 	<body>
-	<h1>Who is Artem?</h1>
+	<h1>Who is Arthem?</h1>
   <button onclick="say()">Who? I wanna know!</button>
 
 	</body>
   <script>
     function say() {
-      text= [
-        "Arthem Pukkini"
-      ]
-      var random = Math.floor(Math.random()*text.length);
-      console.log(random);
+      text= "You mean Pookienie? Arthem Pookienie? He's the greatest motherfucker of all time! Pookienie is an incredible farter as well. Once he farted so loud that he also shat himself. Can you even imagine that?! So that's a little story about sir Pookienie, for your listening pleasure."
       window.speechSynthesis.cancel();
-      return window.speechSynthesis.speak(new SpeechSynthesisUtterance(text[random]));
+      return window.speechSynthesis.speak(new SpeechSynthesisUtterance(text));
     };
   </script>
 </html>
